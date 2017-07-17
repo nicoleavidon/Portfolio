@@ -54,16 +54,16 @@ h1 {
   <a href="aboutme.html"> Back to top</a>
   
   <script>
-    document.getElementByClassName("header").onmouseover = function() {mouseOver()};
-document.getElementByClassName("header").onmouseout = function() {mouseOut()};
+    document.getElementsByClassName("header").onmouseover = function() {mouseOver()};
+document.getElementsByClassName("header").onmouseout = function() {mouseOut()};
     
     
    function mouseOver() {
-    document.getElementByClassName("header").style.color='red';
+    document.getElementsByClassName("header").style.color='red';
    }
 
 function mouseOut() {
-   document.getElementByClassName("header").style.color='black';
+   document.getElementsByClassName("header").style.color='black';
 }
     
   </script>
