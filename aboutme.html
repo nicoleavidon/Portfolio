@@ -24,6 +24,21 @@ h1 {
   </style>
 </head>
 <body style="background-color:powderblue">
+  
+   <script>
+    document.getElementsByClassName("header").onmouseover = function() {mouseOver()};
+document.getElementsByClassName("header").onmouseout = function() {mouseOut()};
+    
+    
+   function mouseOver() {
+    document.getElementsByClassName("header").style.color='red';
+   }
+
+function mouseOut() {
+   document.getElementsByClassName("header").style.color='black';
+}
+    
+  </script>
 
 <h1 class="header"> Nicole Avidon
   <!--<h1 class="header" style="text-align:center;" onmouseover="mouseOver()" onmouseout="mouseOut()"> Nicole Avidon-->
@@ -54,20 +69,7 @@ h1 {
   <br>
   <a href="aboutme.html"> Back to top</a>
   
-  <script>
-    document.getElementsByClassName("header").onmouseover = function() {mouseOver()};
-document.getElementsByClassName("header").onmouseout = function() {mouseOut()};
-    
-    
-   function mouseOver() {
-    document.getElementsByClassName("header").style.color='red';
-   }
-
-function mouseOut() {
-   document.getElementsByClassName("header").style.color='black';
-}
-    
-  </script>
+ 
   
 </body>
 </html>
