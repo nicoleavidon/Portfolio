@@ -26,21 +26,21 @@ h1 {
 <body style="background-color:powderblue">
   
    <script>
-    document.getElementsByClassName("header").onmouseover = function() {mouseOver()};
-document.getElementsByClassName("header").onmouseout = function() {mouseOut()};
+    document.getElementById("header").onmouseover = function() {mouseOver()};
+document.getElementById("header").onmouseout = function() {mouseOut()};
     
     
    function mouseOver() {
-    document.getElementsByClassName("header").style.color='red';
+    document.getElementById("header").style.color='red';
    }
 
 function mouseOut() {
-   document.getElementsByClassName("header").style.color='black';
+   document.getElementById("header").style.color='black';
 }
     
   </script>
 
-<h1 class="header"> Nicole Avidon
+<h1 id="header"> Nicole Avidon
   <!--<h1 class="header" style="text-align:center;" onmouseover="mouseOver()" onmouseout="mouseOut()"> Nicole Avidon-->
     
   <!--<img src="https://ih0.redbubble.net/image.120434802.1992/flat,800x800,075,f.u1.jpg" alt="letter N" width="100" height="100">-->
@@ -50,7 +50,7 @@ function mouseOut() {
   
   <a href="corefourreflection.html"> Reflection Page for Core Four Topics </a>
   
-  <h2 class="header">
+  <h2 id="header">
     About Me</h2>
 
   <p>  <b> Education </b> <br> Syosset High School - expected graduation June 2018
