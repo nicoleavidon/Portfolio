@@ -24,7 +24,8 @@ h1 {
 </head>
 <body style="background-color:powderblue">
 
-<h1 class="header" style="text-align:center;" onmouseover="mouseOver()" onmouseout="mouseOut()"> Nicole Avidon
+<h1 class="header" style="text-align:center;"> Nicole Avidon
+  <!--<h1 class="header" style="text-align:center;" onmouseover="mouseOver()" onmouseout="mouseOut()"> Nicole Avidon-->
     
   <img src="https://ih0.redbubble.net/image.120434802.1992/flat,800x800,075,f.u1.jpg" alt="letter N" width="100" height="100">
   
@@ -53,6 +54,9 @@ h1 {
   <a href="aboutme.html"> Back to top</a>
   
   <script>
+    document.getElementByClass("header").onmouseover = function() {mouseOver()};
+document.getElementByClass("header").onmouseout = function() {mouseOut()};
+    
     
    function mouseOver() {
     document.getElementByClass("header").style.color='red';
